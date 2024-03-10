@@ -9,15 +9,13 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
-
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
-<link rel="icon" href="https://icons8.com/icon/11176/library">
+<title>Bookstore</title>
 
-<title>BookStore</title>
 <style>
 body {
 	background-color: #c1e6cd;
@@ -30,16 +28,15 @@ body {
 
 .custom-button {
 	font-size: 48px;
-	margin-top: 200px;
+
 }
 </style>
 </head>
 <body>
-
 	<div class="container-fluid ">
 
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-			<a class="navbar-brand" href="/bookstore/home">Bookstore</a>
+			<a class="navbar-brand" href="#">Bookstore</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarNav" aria-controls="navbarNav"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +50,7 @@ body {
 					<li class="nav-item"><a class="nav-link" href="#">Features</a>
 					</li>
 
+
 				</ul>
 			</div>
 
@@ -60,23 +58,34 @@ body {
 	</div>
 	<!-- ==navbar code ends here -->
 
+
+	<h4></h4>
+
 	<div class="container text-center mt-5">
-		<h3 class="custom-heading">Welcome to the application, please
-			choose from the below choices..</h3>
-		<div class="row">
-			<div class="col">
-			
-				<a href="/bookstore/admin/login"
-					class="btn btn-primary custom-button float-left">Admin</a>
-					
-				<p class="text-center mt-3">New here? <a href="/signup">Sign Up</a></p>
-			</div>
-			<div class="col">
-				<a href="/bookstore/user/login"
-					class="btn btn-primary custom-button float-right">User</a>
-			</div>
-		</div>
+		<h3 class="custom-heading">Please fill the below form..</h3>
 	</div>
+
+	<div class="container custom-form">
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">User name</label> <input type="text"
+					class="form-control" id="name" aria-describedby="emailHelp"
+					placeholder="Enter username">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label> <input
+					type="password" class="form-control" id="exampleInputPassword1"
+					placeholder="Password">
+			</div>
+
+			<div class="container text-center custom-button">
+				<button type="submit" class="btn btn-primary">Login</button>
+				
+			</div>
+			
+		</form>
+	</div>
+
 
 
 

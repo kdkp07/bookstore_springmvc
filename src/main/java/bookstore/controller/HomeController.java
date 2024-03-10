@@ -11,4 +11,12 @@ public class HomeController {
 		System.out.println("Inside home");
 		return "home";
 	}
+
+	@RequestMapping("/admin/login")
+	public String adminLogin() {
+		System.out.println("Inside admin login");
+		return "admin_login";
+	}
+
+
 }
